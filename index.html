@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 199px;
+            width: 300px;
+            border: 1px solid orangered;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .content {
+
+            /* text-align: center; */
+            color: white;
+            position: absolute;
+            top: 0;
+            /* left: 50%; */
+            /* transform: translate(-50%, -50%); */
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: #66339985;
+            transition: all 3000ms ease;
+
+        }
+
+        .container:hover .content {
+            opacity: 1;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="team2.jpg" alt="">
+            <div class="content">
+                <p>Lorem</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
